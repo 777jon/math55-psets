@@ -1,0 +1,139 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+% info for header block in upper right hand corner
+\name{ }
+\class{Math 55 - Section ~~~}
+\assignment{Homework 3}
+\duedate{Thursday, September 22, 2016}
+
+\newcommand{\pn}[1]{\left(#1\right)}
+\newcommand{\mc}[2]{\pn{\binom{#1}{#2}}}
+\renewcommand{\b}[2]{\binom{#1}{#2}}
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+\begin{document}
+
+\problemlist{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+\begin{problem}[1]
+    Prove the identity: For $m\geq0$ and $n\geq1$,
+    \[
+        \sum_{k=0}^{m}(-1)^k\b{n}{k}=(-1)^m\b{n-1}{m}
+    \]
+    by induction on $m$. (Note: It can also be proved by induction on $n$, but induction on $m$ is simpler.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2]
+    Combinatorially prove for $m\geq0$, $n\geq0$,
+    \[
+        \sum_{k=0}^n\b{n}{k}\b{k}{m}=\b{n}{m}2^{n-m}.
+    \]
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[3]
+    Prove that for $n\geq0$,
+    \[
+        1+\b{n}{1}2+\b{n}{2}4+\dots+\b{n}{n-1}2^{n-1}+\b{n}{n}2^n=3^n
+    \]
+    \begin{enumerate}
+        \item combinatorially, and
+        \item by binomial theorem.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[4]
+    For $n\geq1$, conjecture and prove a formula for the $n$ odd-indexed Fibonacci numbers $f_1+f_3+f_5+\cdots+f_{2n-1}$
+    \begin{enumerate}
+        \item by induction, and
+        \item combinatorially (using tilings)
+    \end{enumerate}
+    (Note: $f_1=1,f_3=3,f_5=8$, etc.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[5]
+    Use the binomial theorem with Binet's formula to prove that for $n\geq0$,
+    \[
+        \sum_{k=0}^n\b{n}{k}F_k=F_{2n}
+    \]
+    Optional BONUS for problem 5 (turn in this solution to me, and do not work on this problem with others): Prove problem 5 combinatorially.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6]
+    Use strong induction to prove that every integer $n$ greater than or equal to 2 is the product of prime numbers. (A prime is a number $p$ greater than or equal to 2 whose only positive divisors are $p$ and 1.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[7]
+    Prove for $n\geq2$,
+    \[
+        \sum_{k=0}^nk^2\b{n}{k}=n2^{n-1}+n(n-1)2^{n-2}
+    \]
+    \begin{enumerate}
+        \item combinatorially and
+        \item using the binomial theorem.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[8]
+    \begin{enumerate}
+        \item How many $n$-digit positive numbers have their digits in strictly increasing order?
+        \item in Non-decreasing order?
+    \end{enumerate}
+     (Clarification: an $n$-digit positive number cannot have a leading digit of zero. In base 4, there are 10 non-decreasing 3-digit numbers: 111, 112, 113, 122, 123, 133, 222, 223, 233, and 333.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[9]
+    \begin{enumerate}
+        \item How many ways are there to pick a collection of 10 balls from a large pile of red balls, blue balls and purple balls, (more than 10 of each color, and balls of the same color are indistinguishable).
+        \item same problem but you must pick at least 5 red balls.
+        \item same, but instead must pick at most 5 red balls.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[10]
+    Combinatorially prove that
+    \[
+        \sum_{k=0}^m\mc{n}{k}=\mc{n+1}{m}.
+    \]
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\end{document}
