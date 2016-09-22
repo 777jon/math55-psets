@@ -1,0 +1,175 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+% info for header block in upper right hand corner
+\name{ }
+\class{Math 55 - Section ~~~}
+\assignment{Homework 4}
+\duedate{Thursday, October 6, 2016}
+
+\newcommand{\ds}{\displaystyle}
+\renewcommand{\c}[2]{\binom{#1}{#2}}
+\renewcommand{\t}[1]{\text{#1}}
+\renewcommand{\labelenumi}{{\alph{enumi})}}
+
+\begin{document}
+
+\problemlist{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+
+\begin{problem}[1]
+    Find the number of ways of arranging the letters A,E,M,O,U,Y in a sequence in such a way that the neither or the words ME or YOU occurs.  (For example, the word YUMEAO would not be allowed since contains the word ME, but YUMOEA would be allowed.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2]
+    How many numbers between 1 and 250 are not divisible by 2, 3 or 5?
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[3]
+    \begin{enumerate}
+        \item Prove that the number of ways to assign $m$ distinct students to $n$ distinct classrooms such that no classroom is empty is $\ds\sum_{k=0}^n\c{n}{k}(n-k)^m(-1)^k$.
+        \item Combinatorially prove that if $n>m$, then $\ds\sum_{k=0}^n\c{n}{k}(n-k)^m(-1)^k=0$.
+        \item Without doing any algebra, simplify $\ds\sum_{k=0}^n\c{n}{k}(n-k)^m(-1)^k$ when $m=n$.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[4]
+    Delegations A, B, and C have respectively, 3, 3, and 4 distinct members.  How many ways can the delegates be seated in a row such that:
+    \begin{enumerate}
+        \item All delegates from A are together.
+        \item All delegates are together from at least one delegation.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[5]
+    Prove the identity 
+    \[
+        \sum_{k=0}^n(-1)^k\c{n}{k}10^{n-k}=9^n
+    \]
+    \begin{enumerate}
+        \item by binomial theorem, and
+        \item combinatorially with inclusion-exclusion.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6]
+    \begin{enumerate}
+        \item Using the polynomial method from class, find a closed form for $a_n$, defined recursively as follows: 
+            \begin{align*}
+                a_0&=2,a_1=11,~\t{and for}~n\geq2,\\
+                a_n&=3a_{n-1}+10a_{n-2}.
+            \end{align*}
+        \item Confirm your solution by an inductive proof.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[7]
+    \begin{enumerate}
+        \item Using the polynomial method from class, find a closed form for $a_n$, defined recursively as follows: 
+            \begin{align*}
+                a_0&=2,a_1=3,~\t{and for}~n\geq2,\\
+                a_n&=6a_{n-1}-9a_{n-2}.
+            \end{align*}
+        \item Confirm your solution by an inductive proof.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[8]
+    Find the recurrence which produces the solution
+    \[
+        a_n=3\cdot2^n+n2^{n+1}-2\cdot5^n,
+    \]
+    for all $n\geq0$.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[9]
+    The polynomial  method works even when the roots are imaginary or complex! Solve the recurrence
+        \begin{align*}
+            a_0&=1,a_1=8,a_2=4,~\t{and for}~n\geq3,\\
+            a_n&=2a_{n-1}-a_{n-2}+2a_{n-3}.
+        \end{align*}
+    (Hint: to save you from some tedious algebra, the \textit{coefficient} of the real root is 1, and the coefficients of the other roots are imaginary.)  Simplify your formula so that it doesn't use complex numbers at all.  (You may have to break the formula into cases, depending on the parity of $n$.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[10]
+    Find and solve a recurrence relation for the number of ways to tile a board of length $n$ with squares and dominoes where squares have two colors (black and white) but dominoes have just one color (white).
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[11]
+    The \textit{Lucas numbers} are close companions with the Fibonacci numbers. They are defined by $L_0=2$, $L_1=1$ and the recurrence $L_n=L_{n-1}+L_{n-2}$.
+    \begin{enumerate}
+        \item Find their closed form;
+        \item Using their closed form and Binet's formula, prove that $F_{2n}=F_nL_n$;
+        \item Using their closed form and Binet's formula, prove that $2F_{k+n}=F_kL_n+F_nL_k$.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[12]
+    Consider a sequence of numbers $b_0,b_1,b_2,\ldots$ such that $b_0=0, b_1=1$ and $b_2, b_3,\ldots$ are defined by the recurrence
+    \[
+        b_{k+1}=3b_k-b_{k-1}.
+    \]
+    Use the polynomial method to find a closed form the value of $b_n$. Also, express you answer in terms of Fibonacci numbers and prove it correct.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[13]
+In this problem, we explore the Fibonacci numbers with negative indices. Given that $F_0 = 0$ and $F_1 = 1$, we can generate $F_{-1} = 1, F_{-2} = -1, F_{-3} = 2$, and so on. For $n\geq 0$, define $a_n = F_{-n}$.
+    \begin{enumerate}
+        \item List $a_0, a_1, \ldots, a_{10}$
+        \item Conjecture and prove (by induction) a formula for $a_n$ in terms of $F$. Hint: Create a recurrence satisfied by $a_n$.
+        \item Use the recurrence from b) and use the polynomial method to find a closed form for $a_n$.
+        \item Using c), show that Binet's formula for $F_n$ is valid, even when $n$ is negative.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\end{document}
