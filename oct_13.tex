@@ -1,0 +1,101 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+% info for header block in upper right hand corner
+\name{ }
+\class{Math 55 - Section ~~~}
+\assignment{Homework 5}
+\duedate{Thursday, October 13, 2016}
+
+\renewcommand{\t}[1]{\text{#1}}
+\renewcommand{\labelenumi}{{\alph{enumi})}}
+
+\begin{document}
+
+\problemlist{1, 2, 3, 4, 5, 6, 7, 8}
+
+\begin{problem}[1]
+    Prove the I.C. theorem from class: If $d|a$ and $d|b$ then $d|ax+by$ for all integers $x$ and $y$.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2]
+    Prove that $n$ can be expressed as an integer combination of $a$ and $b$ if and only if $n$ is a multiple of $(a,b)$.  (Recall that an if and only if proof requires proving two directions.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[3]
+    \begin{enumerate}
+        \item Without using prime factorizations, prove that for integers $a,b,m$: $(a,m)=1$ and $(b,m)=1$ if and only if $(ab,m)=1$.
+        \item Do the same problem with unique factorization.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[4]
+    Use the Euclidean algorithm to find:
+    \begin{enumerate}
+        \item gcd(754, 221),
+        \item an integer combination of 754 and 221 yielding the gcd.
+        \item integers $x$ and $y$ satisfying $87x+28y=200$.
+        \item another solution to c) where the signs of $x$ and $y$ are reversed.
+    \end{enumerate}
+    (Note: All of your answers must utilize Euclid's algorithm. No credit for brut forcing or lucky guessing.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[5]
+    Use Euclid's algorithm to find an integer $x$ such that $97x$ is one more than a multiple of $1234$.  (This is called the \textit{multiplicative inverse} of $97,~\t{mod}~1234$.)\\\\
+    (Hint: 97 and 1234 are relatively prime.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6]
+    For Fibonacci numbers $F_n$ (with $F_0=0$ and $F_1=1$),
+    \begin{enumerate}
+        \item Prove that $(F_{n+1},F_n)=1$ for $n\geq0$.
+        \item Prove for all $n\geq1,F_{m+n}=F_{m+1}F_n+F_mF_{n-1}.$
+    \end{enumerate}
+    (Hint: You can either give a combinatorial argument (recall $F_k=f_{k-1}$) or by fixing $m$ and inducting on $n$.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[7]
+    Prove that if $m|n$ then $F_m|F_n$. (Hint: Prove $F_{km}$ is a multiple of $F_m$ by inducting on $k$ and using part b) of Problem 6).\\\\
+    (In fact, Problems 6a and 7 are special cases of a more amazing theorem which says that if $(m,n)=g$, then $(F_m,F_n)=F_g$. For the proof of this, take Math 175!)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[8]
+    Prove the theorem ``If $(b,c)=1$, then $(ab,c)=(a,c)$'' in two different ways:
+    \begin{enumerate}
+        \item by showing that any common divisor of one pair is a common divisor of the other, and
+        \item by showing that any integer combination of one pair is an integer combination of the other.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\end{document}
