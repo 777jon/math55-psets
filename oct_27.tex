@@ -1,0 +1,108 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+% info for header block in upper right hand corner
+\name{ }
+\class{Math 55 - Section ~~~}
+\assignment{Homework 6}
+\duedate{Thursday, October 27, 2016}
+
+\newcommand{\ds}{\displaystyle}
+\renewcommand{\c}[2]{\binom{#1}{#2}}
+\renewcommand{\t}[1]{\text{#1}}
+\renewcommand{\labelenumi}{{\alph{enumi})}}
+
+\newenvironment{dialog}{\description}{\enddescription}
+
+\begin{document}
+
+\problemlist{1, 2, 3, 4, 5, 6, 7}
+
+\begin{problem}[1]
+    Use Euclid's algorithm to find an integer $x$ such that $846x$ is one more than a multiple of $929$, i.e., find the multiplicative inverse of $846,\t{mod}~929$.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2]
+    Using prime factorizations, prove: For $a,b,c\geq0$,
+    \[
+        \gcd(a,b,c)\cdot\t{lcm}(ab,bc,ca)=abc.
+    \]
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[3]
+    Using prime factorizations, prove the following:
+    \begin{enumerate}
+        \item If $a|bc$, and $(a,b)=1$, then $a|c$.
+        \item If $(a,b)=1$ then $(a^2,b^2)=1$.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[4]
+    \begin{enumerate}
+        \item Prove that if $p$ is prime then for all $0<k<p$, $\c{p}{k}$ is a multiple of $p$. (Hint: Begin with the identity $k\c{p}{k}=p\c{p-1}{k-1}.$)
+        \item Using a) and the Binomial Theorem applied to $(1+1)^p$, prove that if $p$ is prime then $p|(2^p-2)$.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[5]
+    Prove that if $a^2\equiv_pb^2$, where $p$ is prime, then $a\equiv_pb$ or $a\equiv_p-b$.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[6]
+    \begin{enumerate}
+        \item Prove that $x$ is a multiple of $2^n$ iff its last $n$ digits are divisible by $2^n$.
+        \item Prove that $x$ is a multiple of 11 iff when we alternately subtract and add its digits, we end up with a multiple of 11.
+        \item Determine the integer $r\in\{0,1,\ldots,10\}$ satisfying $r\equiv_{11}31415926535897$.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[7]
+    \begin{enumerate}
+        \item Here is a novel divisibility test for 7s. Prove that $10a+b$ is divisible by 7 iff $a-2b$ is divisible by 7. For example, to determine if 2358 is divisible by 7, we reduce this number to 235 - 16 = 219. This number is reduced to 21 - 18 = 3, which is not a multiple of 7, and therefore neither is 2358. (Hint: Show $10a + b \equiv_7 0$ iff $a - 2b \equiv_7 0$. Multiplicative inverses might come in handy too.)
+        \item Now create a similar divisibility test for 29, and prove your result.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[Extra Credit]
+\textit{Note:} This problem is optional. If you decide to do it, then return it directly to Professor Benjamin.\\\\
+An alien appears before number theorists Samantha and Peter and says ``I am thinking of 2 integers $X$ and $Y$ such that $3\leq X\leq Y\leq97$ and I'll tell Samantha the sum and I will tell Peter the product''. Then the alien goes away. The following conversation transpires:
+\begin{dialog}
+    \item Samantha: You do not know what $X$ and $Y$ are.
+    \item Peter: That was true, but I know them now.
+    \item Samantha: And now I know the numbers as well.
+\end{dialog}
+Determine $X$ and $Y$.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\end{document}
