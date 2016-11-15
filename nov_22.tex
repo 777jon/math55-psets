@@ -1,0 +1,74 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+\name{ }
+\class{Math 55 - Section ~~~}
+\assignment{Homework 9}
+\duedate{Tuesday, November 22, 2016}
+
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+\begin{document}
+\problemlist{1, 2, 3, 4, 5}
+
+\begin{problem}[1]
+    \begin{enumerate}
+        \item Show that if $a\ge 2$ and $b\ge 2$, then $R(a,b)\le R(a-1,b) + R(a,b-1)$.
+        \item Show that $$R(a,b)\le {a+b-2\choose a-1}$$ for $a\ge 1$ and $b\ge 1$.
+        \item Show that $R(a,a) \le 2^{2(a-1)}$ for $a \ge 1$.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2]
+    Show that $R(4,4)\le 18$.  (You may use facts stated in the preceding problem, even if you have not proved them.)
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[3]
+    \begin{enumerate}
+        \item For how many graphs on vertices $\{1,\ldots,n\}$ is the graph induced by vertices $\{1,\ldots, a\}$ complete (that is, isomorphic to $K_a$)?
+        \item Show that the number of graphs on vertices $\{1,\ldots, n\}$ that contain an induced $K_a$ or an induced $\overline{K_a}$ is at most $$2{n\choose a}\,2^{{n\choose 2}-{a\choose 2}}.$$
+        \item Show that if $n<2^{(a-1)/2}$, then the number of graphs on vertices $\{1,\ldots,n\}$ that contain an induced $K_a$ or an induced $\overline{K_a}$ is strictly less than $2^{n\choose 2}$.
+        \item Conclude that $R(a,a) \ge 2^{(a-1)/2}$.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[4]
+    Suppose $p$ is a prime, and that $r$ is relatively prime to $p$.  Say that $r$ is a {\it residue\/} mod $p$ if there exists $x$ such that $x^2\equiv r \pmod{p}$, and say that $r$ is a {\it non-residue\/} otherwise.
+    \begin{enumerate}
+        \item Show that the product of two residues is a residue.
+        \item Show that the product of a residue and a non-residue is a non-residue.
+        \item Show that the product of two non-residues is a residue.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[5]
+    The goal of this problem is to show that $R(4,4)>17$ (so by the result of Problem  2 we have $R(4,4)=18$).  (You may use facts stated in the preceding problem, even if you have not proved them.) Let $G=(V,E)$ be the graph with $V=\{0,1,\ldots, 16\}$ and edges $\{v,w\}$ whenever $v\not=w$ and $v-w$ is a residue mod $17$.  We'll show that this graph contains no $K_4$ or $\overline{K_4}$.
+    \begin{enumerate}
+        \item Show that this actually defines a graph; that is, that adjacency is indeed a symmetric relation. 
+        \item Show that the function $f(v) = v+c$ mod 17 is an automorphism of $G$. Thus if $G$ contains a $K_4$ or $\overline{K_4}$, it contains one that includes the vertex $0$.
+        \item Show that if $a$ is a residue, then $f(v) = va^{-1}$ mod 17 is an automorphism of $G$.  Thus if $G$ contains a $K_4$ that includes vertices $0$ and $a$, it contains one that includes vertices $0$ and $1$.
+        \item Show that if $a$ is a non-residue, then $f(v) = va^{-1}$ mod 17 is an isomorphism from $G$ to its complement.  Thus if $G$ contains a $\overline{K_4}$ that includes vertices $0$ and $a$, it contains a $K_4$ that includes vertices $0$ and $1$.
+        \item Complete the proof by showing that contains no $K_4$ that includes the vertices $0$ and $1$.  (What would the other two vertices have to be?)
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\end{document}
